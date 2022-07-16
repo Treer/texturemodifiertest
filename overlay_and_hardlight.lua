@@ -31,12 +31,6 @@ minetest.register_node("texturemodifiertest:Hardlight_to_raise_contrast", {
 	groups = {cracky = 1, oddly_breakable_by_hand = 1},
 })
 
-minetest.register_node("texturemodifiertest:Fantasy_testimage", {
-	description = "Fantasy test image unmodified",
-	tiles = {"fantasy.png"},
-	groups = {cracky = 1, oddly_breakable_by_hand = 1},
-})
-
 minetest.register_node("texturemodifiertest:Hardlight_to_raise_contrast_fantasy", {
 	description = "Hard light blending an image with itself applys an s-curve effect that increases contrast without clipping",
 	tiles = {"fantasy.png^[hardlight:fantasy.png"},

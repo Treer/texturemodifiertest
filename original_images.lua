@@ -9,3 +9,9 @@ minetest.register_node("texturemodifiertest:gradient", {
 	tiles = {"gradient.png"},
 	groups = {cracky = 1, oddly_breakable_by_hand = 1},
 })
+
+minetest.register_node("texturemodifiertest:Fantasy_testimage", {
+	description = "Fantasy test image unmodified",
+	tiles = {"fantasy.png"},
+	groups = {cracky = 1, oddly_breakable_by_hand = 1},
+})
