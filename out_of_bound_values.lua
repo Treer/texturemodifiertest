@@ -1,14 +1,14 @@
 -- test values outside of the texture modifier input range
 
 -- Hue-Saturation-Lightness
-texturemodifiertest.create_node("hsl", "OOB", 181)
+texturemodifiertest.create_node("hsl", "OOB", 361)
 texturemodifiertest.create_node("hsl", "OOB", -181)
 texturemodifiertest.create_node("hsl", "OOB", 0, 1001, -101) -- saturation can now go as high as 1000%
 texturemodifiertest.create_node("hsl", "OOB", 0, -101, 101)
 texturemodifiertest.create_node("hsl", "OOB", 10000, 10000, 10000)
 
 -- Colorize
-texturemodifiertest.create_node("colorizehsl", "OOB", 181)
+texturemodifiertest.create_node("colorizehsl", "OOB", 361)
 texturemodifiertest.create_node("colorizehsl", "OOB", -181)
 texturemodifiertest.create_node("colorizehsl", "OOB", 0, 1001, -101) -- saturation can now go as high as 1000%
 texturemodifiertest.create_node("colorizehsl", "OOB", 0, -101, 101)

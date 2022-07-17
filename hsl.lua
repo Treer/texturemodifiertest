@@ -1,5 +1,6 @@
 -- test normal hue-saturation-lightness values
 
+texturemodifiertest.create_node("hsl", nil, 180)
 texturemodifiertest.create_node("hsl", nil, 150)
 texturemodifiertest.create_node("hsl", nil, 120)
 texturemodifiertest.create_node("hsl", nil, 90)
@@ -11,7 +12,12 @@ texturemodifiertest.create_node("hsl", nil, -60)
 texturemodifiertest.create_node("hsl", nil, -90)
 texturemodifiertest.create_node("hsl", nil, -120)
 texturemodifiertest.create_node("hsl", nil, -150)
+texturemodifiertest.create_node("hsl", nil, -180)
 
+-- Since it's now possible to use 0 to 360 instead of -180 to +180
+texturemodifiertest.create_node("hsl", nil, 240) -- same as -120
+texturemodifiertest.create_node("hsl", nil, 300) -- same as  -60
+texturemodifiertest.create_node("hsl", nil, 360) -- same as    0
 
 -- with saturation
 texturemodifiertest.create_node("hsl", nil, 150,  30)
