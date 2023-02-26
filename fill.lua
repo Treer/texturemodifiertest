@@ -138,9 +138,9 @@ minetest.register_node("texturemodifiertest:fill_yellow_center", {
 	use_texture_alpha="blend"
 })
 
-
+minetest.log("About to test handling of [fill with a malformed string: [fill:16x16:-30:green  (it has a missing y offset)")
 minetest.register_node("texturemodifiertest:fill_malformed1", {
-	description = "test handling of malformed string [fill:16x16:-30:green",
+	description = "test handling of malformed string [fill:16x16:-30:green  (it has a missing y offset)",
 	tiles = {"[fill:16x16:-30:green"},
 	groups = {cracky = 1, oddly_breakable_by_hand = 1},
 	use_texture_alpha="blend"
